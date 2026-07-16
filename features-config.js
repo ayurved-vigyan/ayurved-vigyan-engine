@@ -109,4 +109,4 @@ f25: (boxElement) => {
     });
 
     return () => wrapper.remove();
-},
+};
