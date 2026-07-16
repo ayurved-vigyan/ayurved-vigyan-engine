@@ -1,3 +1,4 @@
+window.FeatureRegistry : {
 f25: (boxElement) => {
     const isAdmin = window.location.search.includes('admin=true');
     const wrapper = document.createElement("div");
