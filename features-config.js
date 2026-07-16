@@ -1,5 +1,5 @@
-window.FeatureRegistry : {
-f25: (boxElement) => {
+window.FeatureRegistry = {
+    f25: (boxElement) => {
     const isAdmin = window.location.search.includes('admin=true');
     const wrapper = document.createElement("div");
     wrapper.className = "payment-engine-container p-4 bg-white rounded-xl shadow-lg border border-purple-200 mt-4";
