@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanjeep Testing Page</title>
+</head>
+<body>
+    <h1>Ayurveda Project Testing</h1>
+    
+    <!-- यह वो डिब्बा है जहाँ आपका फीचर लोड होगा -->
+    <div id="box-element"></div>
+
+    <!-- यहाँ हमने features-config.js को जोड़ा है -->
+    <script src="features-config.js"></script>
+    
+    <script>
+        // यहाँ से हम फीचर को ट्रिगर कर रहे हैं
+        console.log("Feature test start...");
+        
+        // चेक कर रहे हैं कि क्या फीचर लोड हुआ है
+        if (window.FeatureRegistry && window.FeatureRegistry.f25) {
+            FeatureRegistry.f25(document.getElementById('box-element'));
+        } else {
+            console.log("FeatureRegistry या f25 नहीं मिला, फाइल लोड चेक करें!");
+        }
+    </script>
+</body>
+</html>
